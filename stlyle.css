@@ -1,0 +1,126 @@
+:root{
+    --cor-primaria: rgb(12, 12, 218);
+    --cor-secundaria: red;
+    --cor-fundo: #000000;
+
+    --fonte-primaria:'Arial',sans-serif;
+    --tamanho-fonte-titulo: 20px;
+    --tamanho-fonte-h2: 40px;
+    --tamanho-fonte-p: 30px;
+    --cor-texto:#ffffff;
+}
+body,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    text-align: center;
+}
+
+header{
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header h1 strong{
+    color: var(--cor-primaria);
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 0.5px var(--cor-fundo);
+    font-size: var(--tamanho-fonte-titulo);
+}
+
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin: 2%;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+header nav ul li a:hover{
+    color: var(--cor-fundo);
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding-top: 600px;
+}
+
+
+/* --------------------- home ----------------------------------------- */
+#home{
+    padding-top: 600px;
+    padding-bottom: 300px;
+}
+
+#home h2{
+    
+    font-size: var(--tamanho-fonte-h2);
+    
+}
+#home p{
+    font-size: var(--tamanho-fonte-p);
+}
+
+
+/* ----------------------------- jogos ----------------------------------- */
+
+#jogos{
+    padding-top: 600px;
+    padding-bottom: 300px;
+    font-size: 20px;
+    max-width: center;
+}
+
+#jogos p{
+    padding-top: 10px;
+    font-size: 20px;
+    max-width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#jogos h2{
+    margin-top: 10px;
+    
+}
+
+
+
+main section article{
+    margin: 20px 0px 20px 0px;
+}
+
+main section article h1{
+    margin-bottom: 10px;
+}
+
+main section article figure{
+    border: 2px solid var(--cor-texto);
+    width:  200px;
+    margin: auto;
+    margin: auto;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+main section article figure img{
+    width: 100%;
+    height: auto;
+    transition: transforme 0.5s ease;
+}
+
+main section article figure img:hover{
+    transform:  scale(1.2);
+}
